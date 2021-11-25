@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/global.css">
+        <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      />
+        <title>My Products</title>
+    </head>
+    <body>
+
+        <nav id="main-nav">
+
+            <header>
+
+                <h1><a href="index.html" title="netRivals"><img
+                            title="netRivals" alt="netRivals"
+                            src="public/logo.png">netRivals</h1></a>
+
+            </header>
+
+            <ul>
+
+                <a href="index.html"><li>My products</li></a>
+                <a href="index.html"><li>Prices Formulas</li></a>
+                <a href="index.html"><li>Market position</li></a>
+                <a href="index.html"> <li>Settings</li></a>
+
+            </ul>
+
+        </nav>
+
+        <section>
+            
+            <header>
+
+                
+<div>
+                <h2>Apply price formula to my products</h2>
+                <h4>Showing 50 of 4.589 products</h4></div>
+
+                <div><span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span></div>
+
+               
+
+
+            </header>
+
+            
+
+            <article>
+
+                <div class="product">
+
+                    <h3>Smarty Watch</h3>
+                    <figure>
+                        <img src="/public/smarty_watch.jpg">
+                        <figcaption>Original price:</figcaption>
+                    </figure>
+                    <div class="selector"><input type="radio" value="0" name="price" checked>
+                    <label class="price">45€</label></div>
+
+                    <h3>Pretty phone</h3>
+                    <figure>
+                        <img src="/public/pretty_phone.png">
+                        <figcaption>Original price:</figcaption>
+                    </figure>
+                    <div class="selector"><input type="radio" value="1" name="price">
+                    <label class="price">599€</label></div>
+
+
+                    <h3>Dumb Watch</h3>
+                    <figure>
+                        <img src="/public/smarty_watch.jpg">
+                        <figcaption>Original price:</figcaption>
+                    </figure>
+                    <div class="selector"> <input type="radio" value="2" name="price">
+                    <label class="price">29€</label></div>
+
+                </div>
+
+                
+
+                <div class="product">
+
+                    <h3>Smarty Watch</h3>
+                    <figure>
+                        <img src="/public/smarty_watch.jpg">
+                        <figcaption>Final price:</figcaption>
+                    </figure>
+                    <div class="result">45€</div>
+
+                    <h3>Pretty phone</h3>
+                    <figure>
+                        <img src="/public/pretty_phone.png">
+                        <figcaption>Final price:</figcaption>
+                    </figure>
+                    <div class="result">599€</div>
+
+                    <h3>Dumb Watch</h3>
+                    <figure>
+                        <img src="/public/smarty_watch.jpg">
+                        <figcaption>Final price:</figcaption>
+                    </figure>
+                    <div class="result">29€</div>
+
+                </div>
+
+                <div id="app">
+                    <form id="add-to-list">
+                        <label for="list-item"><p>Select the product you want to change the price and write your formula here:</p></label>
+                        <input
+                            required pattern="(?=.*[%+-/\*])(?=.*\d).{1,}"
+                            placeholder="e.g. /2 *10"
+                            id="list-item">
+                        <button>Save</button>
+                    </form>
+                    <div id="list"></div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <script src="js/formulas.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>

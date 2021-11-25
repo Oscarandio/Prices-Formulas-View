@@ -1,0 +1,189 @@
+/* BASE - Base Variable file and Placeholders
+
+@import 'base/_variables.sass'
+@import 'base/_placeholders.sass'
+
+/* MODULES - Re-usable site elements. 
+
+@import 'modules/_component.sass'
+@import 'modules/_products.sass'
+
+/* General styles
+
+*
+    box-sizing: border-box
+
+body
+    display: flex
+    font-family: Open Sans
+    margin: 0
+    padding: 0
+
+/* Menu
+    
+
+h1
+    margin: 0
+    padding: $em / 2
+    padding-bottom: $em
+    border-bottom: $border-values
+
+nav
+    display: none
+    position: fixed
+    height: 100%
+    width: 180px
+
+    background-color: $primary-color
+    border-right: $border-values
+    
+
+    li
+        padding: $em
+        border-bottom: $border-values
+
+        &:hover
+            background-color: $secondary-color
+
+    ul
+        list-style-type: none
+
+        font-size: $font-size
+
+        margin: 0
+        padding: 0
+
+    /* Links in the menu navigation
+
+    a
+        text-decoration: none
+        color: $nav-link-color
+
+/* Mobile Menu
+
+section header
+    display: flex
+    justify-content: space-between
+    margin: 20px
+
+.icon-menu 
+  border: 1px solid $primary-color
+  padding: 10px 20px
+  cursor: pointer
+
+  &:hover 
+    background: $primary-color
+    border: 1px solid $primary-color
+    color: $white
+
+.mostrar 
+    display: block
+
+/* Main Content
+
+section
+    margin-left: 10px
+    width: 98%
+
+article
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+
+h2
+    font-size: $em
+
+h4
+    font-size: $font-size / 1.4
+    color: $secondary-color
+
+@media (min-width: $breakpoint-desktop)
+
+    /* Menu Navigation
+
+    nav
+        display: block
+        position: fixed
+
+        height: 100%
+        width: 180px
+
+        background-color: $primary-color
+        border-right: $border-values
+
+        li
+            padding: $em
+            border-bottom: $border-values
+
+            &:hover
+                background-color: $secondary-color
+
+    .icon-menu
+        display: none
+
+    /* Main Content
+
+    section
+        margin-left: 200px
+        width: 100%
+
+    button
+
+        border: 3px solid $save-button-color
+        color: $save-button-color
+        background-color: $white
+
+        &:hover
+            background-color: $save-button-color
+            color: $white
+            transition: 0.4s
+            transform: scale(1.1)
+
+    h3
+        font-size: $font-size
+
+    /* Products
+
+    .product
+        font-size: $font-size
+
+    /* Component Styles
+     
+    #app
+        width: 50%
+        height: 700px
+
+    .removeb
+
+        border: 3px solid $remove-button-color
+        color: $remove-button-color
+        background-color: $white
+        width: 160px
+
+        &:hover
+            background-color: $remove-button-color
+            color: $white
+            transition: 0.2s
+
+    .editb
+        border: 3px solid $edit-button-color
+        color: $edit-button-color
+        background-color: $white
+        width: 160px
+
+        &:hover
+            background-color: $edit-button-color
+            color: $white
+            transition: 0.2s
+
+    .resultb
+        width: 160px
+
+    article div:nth-of-type(1)
+        order: 1
+
+    article div:nth-of-type(2)
+        order: 3
+
+    article div:nth-of-type(3)
+        order: 2
